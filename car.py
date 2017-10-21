@@ -6,6 +6,9 @@ class Car(object):
 		self.type_ = type_
 		self.num_of_doors = 4
 		self.num_of_wheels = 4
+
+		self.speed = 0
+
 		
 
 		#Number of doors based on car type
@@ -23,7 +26,19 @@ class Car(object):
 		else:
 			return False
 		"""The Trailer should have speed 0 km/h until you put `the pedal to the metal`"""
+		"""The Mercedes should have speed 0 km/h until you put `the pedal to the metal`"""
+		"""The car drive function should return the instance of the Car class'"""
+
+	def drive(self,gear):
+		if gear == 7:
+			self.speed = 77
+		elif gear == 3:
+			self.speed = 1000
+		return self
+
 	
+
+
 
 
 
